@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1d2b64; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f8cdda,
+    #1d2b64
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f8cdda,
+    #1d2b64
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.frame {
+  height: 50%;
+  width: 40%;
+  min-width: 300px;
+  min-height: 400px;
+  border: 5px double grey;
+  border-radius: 5%;
+  background-color: rgba(255, 255, 255, 0.513);
+}
+
+.title{
+    text-align: center;
+    padding: 0.6rem;
+    font-weight: bolder;
+    font-size: x-large;
+    font-family: monospace;
+}
+.screen{
+    height: 20%;
+    background-color: rgb(49, 49, 49);
+    border: 2px solid black;
+    margin-bottom: 4%;
+}
+.screenTxt{
+  color: white;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: 60%;
+  right: 5px;
+}
+
+label,input,select{
+    display: block;
+    margin: 2px;
+    margin-left: 5%;
+    font-size: large;
+  }
+  input,select{
+    width: 70%;
+}
+
+.actionBtn{
+    width: 50%;
+    text-align: center;
+    position: relative;
+    left: 25%;
+    padding: 0.1em;
+    font-size: large;
+    border-radius: 5px;
+}
+.actionBtn:hover{
+    background-color: gray;
+    color: whitesmoke;
+    box-shadow: inset 1px 1px 12px rgb(185, 185, 185);
+    font-weight: bold;
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+    .frame {
+      width: 25%;
+      height: 50%;
+    }
+  }
